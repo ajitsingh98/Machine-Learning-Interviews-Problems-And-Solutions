@@ -1,11 +1,89 @@
-# Machine Learning Workflows Questions
+# Machine Learning Questions
 
-## Contens
-- [Basics](#basics)
-- [Sampling and Creating Training Data](#sampling-and-creating-training-data)
-- [Objective Functions, Metrics, and Evaluation](#objective-functions,-metrics,-and-evaluation)
+## Contents
+- [Classical Machine Learning](#classical-machine-learning)
+- [Dimensionality Reduction](#dimensionality-reduction)
+- [Machine Learning Workflows](#machine-learning-workflows)
+    - [Basics](#basics)
+    - [Sampling and Creating Training Data](#sampling-and-creating-training-data)
+- [Objective Functions and Performance Metrices](#objective-functions-and-performance-metrices)
 
-## Basics
+---
+
+## Classical Machine Learning
+
+1. What are the basic assumptions to be made for linear regression?
+2. What happens if we don’t apply feature scaling to logistic regression?
+3. What are the algorithms you’d use when developing the prototype of a fraud detection model?
+4. Feature selection.
+    1. Why do we use feature selection?
+    1. What are some of the algorithms for feature selection? Pros and cons of each.
+5. k-means clustering.
+    1. How would you choose the value of k?
+    1. If the labels are known, how would you evaluate the performance of your k-means clustering algorithm?
+    1. How would you do it if the labels aren’t known?
+    1. Given the following dataset, can you predict how K-means clustering works on it? Explain.
+    ![image](assets/k_means.png)
+6. k-nearest neighbor classification.
+    1. How would you choose the value of k?
+    1. What happens when you increase or decrease the value of k?
+    1. How does the value of k impact the bias and variance?
+7. k-means and GMM are both powerful clustering algorithms.
+    1. Compare the two.
+    1. When would you choose one over another?
+![image](assets/k_means1.png)
+8. Bagging and boosting are two popular ensembling methods. Random forest is a bagging example while XGBoost is a boosting example.
+    1. What are some of the fundamental differences between bagging and boosting algorithms?
+    1. How are they used in deep learning?
+9. Given this directed graph.
+    ![image](assets/dag.png)
+    1. Construct its adjacency matrix.
+    1. How would this matrix change if the graph is now undirected?
+    1. What can you say about the adjacency matrices of two isomorphic graphs?
+10. Imagine we build a user-item collaborative filtering system to recommend to each user items similar to the items they’ve bought before.
+    1. You can build either a user-item matrix or an item-item matrix. What are the pros and cons of each approach?
+    1. How would you handle a new user who hasn’t made any purchases in the past?
+11. Is feature scaling necessary for kernel methods?
+12. Naive Bayes classifier.
+    1. How is Naive Bayes classifier naive?
+    1. Let’s try to construct a Naive Bayes classifier to classify whether a tweet has a positive or negative sentiment. We have four training samples:
+    ```math
+    \begin{bmatrix} 
+        Tweet & Label \\
+        This makes me so upset & Negative\\
+        This puppy makes me happy & Positive \\
+        Look at this happy hamster & Positive \\
+        No hamsters allowed in my house	 & Negative
+        \end{bmatrix}
+    ```
+    According to your classifier, what's sentiment of the sentence The hamster is upset with the puppy?
+13. Two popular algorithms for winning Kaggle solutions are Light GBM and XGBoost. They are both gradient boosting algorithms.
+    1. What is gradient boosting?
+    1. What problems is gradient boosting good for?
+14. SVM.
+    1. What’s linear separation? Why is it desirable when we use SVM?
+    ![image](assets/svm1.png)
+    1. How well would vanilla SVM work on this dataset?
+    ![image](assets/svm2.png)
+    1. How well would vanilla SVM work on this dataset?
+    ![image](assets/svm3.png)
+    1. ow well would vanilla SVM work on this dataset?
+    ![image](assets/svm4.png)
+
+## Dimensionality Reduction
+
+1. Why do we need dimensionality reduction?
+1. Eigendecomposition is a common factorization technique used for dimensionality reduction. Is the eigendecomposition of a matrix always unique?
+1. Name some applications of eigenvalues and eigenvectors.
+1. We want to do PCA on a dataset of multiple features in different ranges. For example, one is in the range $0-1$ and one is in the range $10 - 1000$. Will PCA work on this dataset?
+1. Under what conditions can one apply eigendecomposition? What about SVD?
+    1. What is the relationship between SVD and eigendecomposition?
+    1. What’s the relationship between PCA and SVD?
+1. How does $t-SNE$ (T-distributed Stochastic Neighbor Embedding) work? Why do we need it?
+
+## Machine Learning Workflows
+
+### Basics
 
 1. Explain supervised, unsupervised, weakly supervised, semi-supervised, and active learning.
 2. Empirical risk minimization.
@@ -36,7 +114,7 @@
     1. How do you validate whether your hypotheses are correct?
     1. Imagine your hypotheses about the causes are correct. What would you do to address them?
 
-## Sampling and Creating Training Data
+### Sampling and Creating Training Data
 
 1. If you have 6 shirts and 4 pairs of pants, how many ways are there to choose 2 shirts and 1 pair of pants?
 2. What is the difference between sampling with vs. without replacement? Name an example of when you would use one rather than the other?
@@ -74,9 +152,7 @@
 19. You’re building a neural network and you want to use both numerical and textual features. How would you process those different features?
 20. Your model has been performing fairly well using just a subset of features available in your data. Your boss decided that you should use all the features available instead. What might happen to the training error? What might happen to the test error?
 
-
-## Objective Functions, Metrics, and Evaluation
-
+## Objective Functions and Performance Metrices
 
 1. Convergence.
     1. When we say an algorithm converges, what does convergence mean?
@@ -94,7 +170,7 @@
     1. What’s wrong with training and testing a model on the same data?
     1. Why do we need a validation set on top of a train set and a test set?
     1. Your model’s loss curves on the train, valid, and test sets look like this. What might have been the cause of this? What would you do?
-    ![image](loss_training.png)
+    ![image](assets/loss_training.png)
 
 6. Your team is building a system to aid doctors in predicting whether a patient has cancer or not from their X-ray scan. Your colleague announces that the problem is solved now that they’ve built a system that can predict with 99.99% accuracy. How would you respond to that claim?
 7. F1 score.

@@ -91,8 +91,8 @@
  D4: The bird gets the worm from the early duck
  D5: The duck and the birds are so different from each other but one thing they have in common is that they both get the worm
 ```
-    1. Given a query Q: “The early bird gets the worm”, find the two top-ranked documents according to the TF/IDF rank using the cosine similarity measure and the term set {bird, duck, worm, early, get, love}. Are the top-ranked documents relevant to the query?
-    1. Assume that document D5 goes on to tell more about the duck and the bird and mentions “bird” three times, instead of just once. What happens to the rank of D5? Is this change in the ranking of D5 a desirable property of TF/IDF? Why?
+1. Given a query Q: “The early bird gets the worm”, find the two top-ranked documents according to the TF/IDF rank using the cosine similarity measure and the term set {bird, duck, worm, early, get, love}. Are the top-ranked documents relevant to the query?
+1. Assume that document D5 goes on to tell more about the duck and the bird and mentions “bird” three times, instead of just once. What happens to the rank of D5? Is this change in the ranking of D5 a desirable property of TF/IDF? Why?
 6. Your client wants you to train a language model on their dataset but their dataset is very small with only about 10,000 tokens. Would you use an n-gram or a neural language model?
 7. For n-gram language models, does increasing the context length (n) improve the model’s performance? Why or why not?
 8. What problems might we encounter when using softmax as the last layer for word-level language models? How do we fix it?
@@ -136,10 +136,10 @@
 2. How would a finite or infinite horizon affect our algorithms?
 3. Why do we need the discount term for objective functions?
 4. Fill in the empty circles using the minimax algorithm.
-[img](rl-1.png)
+![image](assets/rl-1.png)
 
 5. Fill in the alpha and beta values as you traverse the minimax tree from left to right.
-[img](rl-2.png)
+![image](assets/rl-2.png)
 
 6. Given a policy, derive the reward function.
 
