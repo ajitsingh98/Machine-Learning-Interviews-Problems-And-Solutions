@@ -23,28 +23,34 @@
     1. If the labels are known, how would you evaluate the performance of your k-means clustering algorithm?
     1. How would you do it if the labels aren’t known?
     1. Given the following dataset, can you predict how K-means clustering works on it? Explain.
-    ![image](assets/k_means.png)
-6. k-nearest neighbor classification.
+       
+    <img src="assets/k_means.png" width="300">
+   
+7. k-nearest neighbor classification.
     1. How would you choose the value of k?
     1. What happens when you increase or decrease the value of k?
     1. How does the value of k impact the bias and variance?
-7. k-means and GMM are both powerful clustering algorithms.
+8. k-means and GMM are both powerful clustering algorithms.
     1. Compare the two.
     1. When would you choose one over another?
-![image](assets/k_means1.png)
-8. Bagging and boosting are two popular ensembling methods. Random forest is a bagging example while XGBoost is a boosting example.
+       
+	<img src="assets/k_means1.png" width="300">
+
+9. Bagging and boosting are two popular ensembling methods. Random forest is a bagging example while XGBoost is a boosting example.
     1. What are some of the fundamental differences between bagging and boosting algorithms?
     1. How are they used in deep learning?
-9. Given this directed graph.
-    ![image](assets/dag.png)
+10. Given this directed graph.
+    
+     <img src="assets/dag.png" width="300">
+    
     1. Construct its adjacency matrix.
     1. How would this matrix change if the graph is now undirected?
     1. What can you say about the adjacency matrices of two isomorphic graphs?
-10. Imagine we build a user-item collaborative filtering system to recommend to each user items similar to the items they’ve bought before.
+12. Imagine we build a user-item collaborative filtering system to recommend to each user items similar to the items they’ve bought before.
     1. You can build either a user-item matrix or an item-item matrix. What are the pros and cons of each approach?
     1. How would you handle a new user who hasn’t made any purchases in the past?
-11. Is feature scaling necessary for kernel methods?
-12. Naive Bayes classifier.
+13. Is feature scaling necessary for kernel methods?
+14. Naive Bayes classifier.
     1. How is Naive Bayes classifier naive?
     1. Let’s try to construct a Naive Bayes classifier to classify whether a tweet has a positive or negative sentiment. We have four training samples:
     ```math
@@ -57,18 +63,25 @@
         \end{bmatrix}
     ```
     According to your classifier, what's sentiment of the sentence The hamster is upset with the puppy?
-13. Two popular algorithms for winning Kaggle solutions are Light GBM and XGBoost. They are both gradient boosting algorithms.
+15. Two popular algorithms for winning Kaggle solutions are Light GBM and XGBoost. They are both gradient boosting algorithms.
     1. What is gradient boosting?
     1. What problems is gradient boosting good for?
-14. SVM.
+16. SVM.
     1. What’s linear separation? Why is it desirable when we use SVM?
-    ![image](assets/svm1.png)
+
+ 	 <img src="assets/svm1.png" width="300">
+    
     1. How well would vanilla SVM work on this dataset?
-    ![image](assets/svm2.png)
+
+	 <img src="assets/svm2.png" width="300">
+
     1. How well would vanilla SVM work on this dataset?
-    ![image](assets/svm3.png)
+
+	 <img src="assets/svm2.png" width="300">
+
     1. ow well would vanilla SVM work on this dataset?
-    ![image](assets/svm4.png)
+
+     	<img src="assets/svm2.png" width="300">
 
 ## Dimensionality Reduction
 
@@ -170,7 +183,8 @@
     1. What’s wrong with training and testing a model on the same data?
     1. Why do we need a validation set on top of a train set and a test set?
     1. Your model’s loss curves on the train, valid, and test sets look like this. What might have been the cause of this? What would you do?
-    ![image](assets/loss_training.png)
+  
+    <img src="assets/loss_training.png" width="300">
 
 6. Your team is building a system to aid doctors in predicting whether a patient has cancer or not from their X-ray scan. Your colleague announces that the problem is solved now that they’ve built a system that can predict with 99.99% accuracy. How would you respond to that claim?
 7. F1 score.
